@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* padding: 25px; */
+    margin: 5% auto;
+    width: 700px;
+    height: 700px;
+    background-color: grey;
+
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    background-color: teal;
+    text-align: center;
+    font-size: 100pt;
+    line-height: 200px;
+
+}
+
+.center {
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+}
+
+.middle {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
