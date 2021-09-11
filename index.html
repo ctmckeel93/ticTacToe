@@ -9,15 +9,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="box box-1"></div>
-        <div class="center box box-2"></div>
-        <div class="box box-3"></div>
-        <div class=" middle box box-4"></div>
-        <div class=" middle center box box-5">X</div>
-        <div class=" middle box box-6"></div>
-        <div class="box box-7"></div>
-        <div class="center box box-8"></div>
-        <div class=" bottom-corner box box-9"></div>
+        <div onclick="chooseBox(this.id)" id="box-1" class="box"></div>
+        <div onclick="chooseBox(this.id)" id="box-2" class="box center"></div>        
+        <div onclick="chooseBox(this.id)" id="box-3" class="box"></div>        
+        <div onclick="chooseBox(this.id)" id="box-4" class="box middle"></div> 
+        <div onclick="chooseBox(this.id)" id="box-5" class="box center middle"></div>
+        <div onclick="chooseBox(this.id)" id="box-6" class="box middle"></div>
+        <div onclick="chooseBox(this.id)" id="box-7" class="box"></div>
+        <div onclick="chooseBox(this.id)" id="box-8" class=" center box"></div>
+        <div onclick="chooseBox(this.id)" id="box-9" class="box"></div>
+    </div>
+    <div class="game-state">
+        <h2>Score</h2>
+        <hr>
+        <p>X:</p>
+        <p>O:</p>
     </div>
 
     <script src="script.js"></script>

@@ -7,6 +7,7 @@
 
 body {
     background-color: red;
+    display:flex;
 }
 
 .container {
@@ -42,4 +43,11 @@ body {
 .middle {
     border-top: 2px solid red;
     border-bottom: 2px solid red;
+}
+
+.game-state {
+    margin: 5% auto;
+    padding: 20px;
+    width: 150px;
+    background-color:purple;
 }
