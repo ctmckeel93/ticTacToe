@@ -60,3 +60,8 @@ body {
 span {
     margin-left: 20px;
 }
+button {
+    width: 100px;
+    height: 20px;
+    display: none;
+}

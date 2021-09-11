@@ -16,25 +16,34 @@ const winConditions = [
 ];
 
 function chooseBox(id) {
-    console.log(id);
-    if (isActive == true){
 
+    if (isActive == true){
         var element = document.getElementById(`${id}`)
+
         if (element.innerHTML == "") {
-            document.getElementById(`${id}`).innerHTML = player;
+            takeTurn(id);
+        }
+    }
+}
+
+
+function takeTurn(id) {
+    document.getElementById(`${id}`).innerHTML = player;
+            
             gameState[id - 1] = player;
-            console.log(gameState);
+            
             for (let i = 0; i < winConditions.length; i++) {
-                console.log(winConditions[i]);
+    
                 var currentArray = winConditions[i] 
     
                 for (let j = 0; j < currentArray.length; j++) {
-                    console.log(currentArray[j]);
+                    
                     var winCheck = currentArray[j];
                     if (gameState[winCheck] == player) {
-                        console.log("Yes!")
+                        
                         if (j == 2) {
                             turnTracker.innerHTML = `Player ${player} wins!`
+                            document.getElementById('restart').style.display = "block"
                             isActive = false;
                             return 0
                         }
@@ -50,9 +59,11 @@ function chooseBox(id) {
             else {
                 player = "X"
             }
+
             const turnDisplay = `Player ${player}, it's your turn!`;
             turnTracker.innerHTML = turnDisplay;
-        }
-    }
 }
 
+function restartGame() {
+    location.reload();
+}
